@@ -1,24 +1,35 @@
-# FormLabel
+## About
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+@ngx-tc/form-label is an Angular library that provides a UI component for displaying label text about form fields. This library allows developers to easily add field label to their forms, improving usability and accessibility for end-users. It is built on Angular and is designed to be lightweight, easy to use, and highly customizable.
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name --project form-label` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project form-label`.
-> Note: Don't forget to add `--project form-label` or else it will be added to the default project in your `angular.json` file. 
+Install `@ngx-tc/form-label` in your project:
 
-## Build
+```
+npm install @ngx-tc/form-label
+```
 
-Run `ng build form-label` to build the project. The build artifacts will be stored in the `dist/` directory.
+Import `TcFormLabelModule` e.g. in your `app.module.ts`:
+```typescript
+import { TcFormLabelModule } from '@ngx-tc/form-label';
 
-## Publishing
+@NgModule({
+  imports: [
+    ...
+    TcFormLabelModule
+  ],
+})
+export class AppModule {}
+```
 
-After building your library with `ng build form-label`, go to the dist folder `cd dist/form-label` and run `npm publish`.
+Use the `tc-form-label` component in you app:
+```html
+<tc-form-label>
+  Form control label
+</tc-form-label>
+```
 
-## Running unit tests
-
-Run `ng test form-label` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Demo
+To view a working demo of the library in action, please follow the provided link. The demo will allow you to explore the various components and features included in this library and see how they can be used in your Angular applications.
+[http://tc-library.type-code.pro/#/components/inputs](http://tc-library.type-code.pro/#/components/inputs)

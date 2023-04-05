@@ -2,11 +2,17 @@
 
 :host {
   --tc-form-label-color: inherit;
-  --tc-form-label-font-weight: 600;
-  --tc-form-label-margin: 0 0 var(--tc-base-module-rem);
+  --tc-form-label-fs: inherit;
+  --tc-form-label-ff: inherit;
+  --tc-form-label-fw: 600;
+  --tc-form-label-lh: inherit;
+  --tc-form-label-margin: 0 0 var(--tc-base-module-rem, .5rem);
 
-  color: var(--tc-form-description-color);
+  color: var(--tc-form-label-color);
   display: block;
-  font-weight: var(--tc-form-label-font-weight);
+  font-size: var(--tc-form-label-fs);
+  font-family: var(--tc-form-label-ff);
+  font-weight: var(--tc-form-label-fw);
+  line-height: var(--tc-form-label-lh);
   margin: var(--tc-form-label-margin);
 }
